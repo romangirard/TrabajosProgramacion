@@ -1,43 +1,60 @@
 program Seis;
 
 
-var T : Integer;
+var 
     i : integer;
     N : Integer;
-    Nro : Integer;
-    C : integer;
-    Max : integer;
+    Nro1 : Integer;
+    Nro2: integer;
+    Nro3 : integer;
 
 begin
-C := 1;
-writeln('ingrese la cantidad de veces a operar');
-readln(N);
-if N >= 3 then
-  begin
-   for i := 1 to N do
+
+    writeln('ingrese la cantidad de veces a operar');
+    readln(N);
+    
+    writeln('ingrese el primer numero de la sucesion');
+    readln(Nro1);
+    writeln('ingrese el siguiente numero');
+    readln(Nro2);
+
+      
+    for i := 3 to N do
     begin
-        writeln('ingrese el primer numero de la sucesion');
-        readln(nro);
-        Max := Nro;
-        w3riteln('ingrese el siguiente numero');
-        readln(Nro);
-        if Nro > Max then
-        begin
-        Max := Nro;  
-        C := C+1;
-        end;
+    
         writeln('ingrese siguiente numero');
-        readln(Nro);  
-        end;
-        end
-    else
-        begin
-        writeln('La cantidad de veces a operar debe ser 3 o mas');
-        end;
-       end;
-       end;
-     55
+        readln(Nro3);
         
-       
-  writeln(Max , C);
+        if Nro2 > Nro1 then
+        begin
+            
+            if Nro2 < Nro3 then
+            begin
+                writeln(Nro3, ' posicion 3');      
+            end
+            else
+            begin
+                writeln(Nro2 ,' posicion 2');
+            end 
+        end
+        else
+        begin
+            if Nro1 > Nro3 then
+            begin
+                writeln(Nro1 ,' posicion 1');
+            end
+            else
+            begin
+                writeln(Nro3, ' posicion 3'); 
+            end
+        end;
+        
+        Nro1 := Nro2;
+        Nro2 := Nro3;
+        
+        
+ 
+ end;
+
+
 end.
