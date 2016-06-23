@@ -27,15 +27,12 @@ Max := Dif;
             If Dif > Max then
             begin
                 Max:= Dif;
-                writeln(Max);
-            end
-            else
-            begin
-                writeln (Max);
+                //writeln(Max);
             end;
           Nro1 := Nro2;
           Nro2 := Nro3;
        end;
  
+    WriteLn('la mayor diferencia es: ', Max);
 
 end.
