@@ -9,23 +9,22 @@ begin
 writeln('ingrese la cantidad de veces que desea operar');
 readln(N);
 
-if N > 2 then
+if N >= 2 then
 begin
-    for i := 1 to N do
+    
+    writeln('ingrese el primer numero');          
+    readln(nro);
+    Primer := nro;
+
+    for i := 2 to N do
         begin
-        writeln('ingrese el primer numero');          
-        readln(nro);
-        Primer := nro;
+        
         writeln('ingrese el siguiente');
         readln(nro);
         Siguiente := nro;
         writeln('el resultado es');
         writeln(Primer - Siguiente);
-        if i = N then
-        begin
-        writeln('el ultimo numero se muestra en pantalla');
-        writeln(nro);  
-        end;
+        Primer := Siguiente;
      end;
 end
 else
