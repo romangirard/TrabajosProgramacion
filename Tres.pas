@@ -1,41 +1,31 @@
 program Tres;
 uses crt;
-var N : integer;
-    Primer : integer;
-    Siguiente : integer;
-    i : Integer;
-
+var Primer : integer;
+    numero : integer;
 begin
-writeln('inserte cantidad de veces a operar');
-readln(N);  
-if N > 2 then
-  begin
-    repeat
+
+    writeln('ingrese el primer numero de la sucesion');
+    readln(numero);
+    Primer := numero;
+
+    ReadLn(numero);
+
+    while numero <> 0 do
     begin
-    for i := 1 to N do
-        begin
-        writeln('ingrese el primer y el siguiente numero de la sucesion');
-        readln(Primer, Siguiente);
-            if (Primer <> 0) and (Siguiente <> 0) then
-            begin
-            writeln(Primer - Siguiente);
-            end
-            else
-            begin
-            writeln('no se admite un cero');  
-            end;
-            end;
-     end  
-     until i = N;
-     
-     writeln(Siguiente);
+
+        writeln('la direrencia es: ', Primer - numero);
+        Primer := numero;
+        
+        writeln('ingrese el siguiente numero de la sucesion');
+        readln( numero);
+           
+        
+        
+     end  ;
+    
      
        
-  end
-  else
-  begin
-  writeln('N debe ser mayor a 2');
-  end;
+
 readkey();
 
 end.
