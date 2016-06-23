@@ -10,21 +10,26 @@ var
     
 begin
 writeln('ingrese cantidad de numeros');
-readln(N);
+readln(N);  
 writeln('ingrese un numero');
 readln(Nro);
 Min := Nro;
-C := 2;
+C := 1;
 
-while (C <= N) and (Nro >= Min) do
+while (C < N) and (Nro >= Min) do
 begin
+  Min := Nro;
   writeln('ingrese otro numero');
   readln(Nro);
-  if Nro > Min then
-    begin
-      Min := Nro;
-      C := C + 1;
-    end;
+  c := c +1;
+end;
+if (Nro >= Min) then
+  begin
+    Write('orden');  
+  End
+else
+begin
+  write('no hay orden');
 end;
   
 end.
