@@ -7,14 +7,18 @@ var Au : integer;
     N : Integer;
 
 begin
+writeln('inserte la cantidad de numeros a operar');
+readln(N);
+
+writeln('estos son los resultados de Fibonacci');
+
 Au := 0;
 U := 1;
 R := Au + U;
 writeln (Au, U, R);
-writeln('inserte la cantidad de numeros a operar');
-readln(N);
-writeln('estos son los resultados de Fibonacci');
-for i := 1 to N do 
+
+
+for i := 4 to N do 
   begin
   Au := U;
   U := R;
