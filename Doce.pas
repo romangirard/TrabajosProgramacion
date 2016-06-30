@@ -23,7 +23,7 @@ while (Nro1 <> 0) do
           end
           else
             begin
-              if Nro1 > Am then
+              if Nro1 > AM then
               begin
                 AM := Nro1;
               end;
