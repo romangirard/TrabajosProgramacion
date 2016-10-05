@@ -7,3 +7,4 @@ mayor densidad en el espacio a analizar,siendo estos, prototipos de una/s cierta
 Esto lo hace evaluando "k" elementos a "su alrededor". 
 Cuando se cargan las caracterisitcas de los prototipos no se da ningun indicio de la dispocision
 "en el espacio" (x,y) que van a tener estos.
+
